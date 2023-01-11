@@ -29,7 +29,7 @@
     
     L.marker([48.22023742827497, 14.420563477647637]).addTo(map)
         .bindPopup('Öffentliche Bibliothek Asten<br/>Marktplatz 1<br/>4481 Asten'
-        + '<br/><br/><a target="_blank" href="https://www.google.com/maps/dir//Marktpl.+1,+4481+Asten/@48.2199105,14.4209009,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4773bbe452e1f383:0x5631eeb7f21c722!2m2!1d14.4209009!2d48.2199105!3e0">Route hierin (Google Maps)</a>');
-        // .openPopup();
+        + '<br/><br/><a target="_blank" href="https://www.google.com/maps/dir//Marktpl.+1,+4481+Asten/@48.2199105,14.4209009,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4773bbe452e1f383:0x5631eeb7f21c722!2m2!1d14.4209009!2d48.2199105!3e0">Route hierhin (Google Maps)</a>')
+        .openPopup();
     
 })(jQuery);
