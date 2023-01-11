@@ -1,0 +1,68 @@
+
+{% if page.lang == site.lang or page.lang == [] %}
+    {% assign _lang = site.lang %}
+    {% capture footer_prefix %}/{% endcapture %}
+{% else %}
+    {% assign _lang = page.lang %}
+    {% capture footer_prefix %}/{{ page.lang }}/{% endcapture %}
+{% endif %}
+
+<footer class="main-footer">
+    <section id="footer">
+        <div class="container">
+                
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div>
+                        <a class="footer-link" href="{{ site.data.i18n.t.footer.biba-link[_lang] }}" target="_blank">
+                            <span class="icon icon-spa">{% include svg/biba-logo.svg %}</span>
+                        </a>
+                    </div>
+                    <div>Öffentliche Bibliothek Asten</div>
+                    <div>Marktplatz 1, 4481 Asten, Österreich</div>
+                    <div>Tel.: +43 7224 65516-41</div>
+                    <div><a href="mailto:info@fh-ooe.at">Mail: asten@bvoe.at</a></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4>Infos</h4>
+                    <ul class="linklist">                        
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.imprint-link[_lang] }}">{{ site.data.i18n.t.footer.imprint[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.dataprotection-link[_lang] }}">{{ site.data.i18n.t.footer.dataprotection[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.sitemap-link[_lang] }}">{{ site.data.i18n.t.footer.sitemap[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}#contact">{{ site.data.i18n.t.footer.contact[_lang] }}</a></li>
+                        <li><a href="{{ footer_prefix }}{{ site.data.i18n.t.pages.press-link[_lang] }}">{{ site.data.i18n.t.footer.press[_lang] }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <h4>Quick Links</h4>
+                    <ul class="linklist">
+                    <li><a href="{{ site.data.i18n.t.footer.bvoe-link[_lang] }}" target="_blank">{{ site.data.i18n.t.footer.bvoe[_lang] }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-12">
+                    <ul class="iconlist">
+                        <li><a class="icon-link" href="{{ site.data.links.fb }}" target="_blank"><span class="icon icon-facebook">{% include svg/icon-facebook.svg %}</span></a></li>
+                        <li><a class="icon-link" href="{{ "/feed.xml" | relative_url }}" target="_blank"><span class="icon icon-rss">{% include svg/icon-rss.svg %}</span></a></li>
+                        <li class="lang-selector">
+                            {% if _lang == "de" %}
+                                <span id="lang-link-de" class="lang-link active-lang" >DE</span>
+                                <a id="lang-link-en" class="lang-link" href="/en/">EN</a>
+                            {% else %}
+                                <a id="lang-link-de" class="lang-link" href="/" >DE</a>
+                                <span id="lang-link-en" class="lang-link active-lang" >EN</span>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row special-info">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div>&copy {{ 'now' | date: "%Y" }} | {{ site.data.i18n.t.footer.biba[_lang] }}</div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p>{{ site.data.i18n.t.footer.fundingtext[_lang] }} <a target="_blank" href="{{ site.data.links.bvoe }}">www.bvoe.at</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>

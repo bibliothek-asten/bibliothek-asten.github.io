@@ -1,0 +1,221 @@
+.navbar-default {
+    border: none;
+    font-family: $sans-serif-font-stack;
+    background-color: $background-color;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    font-family: $sans-serif-font-stack;
+    font-weight: 700;
+    color: $brand-primary;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: $brand-highlight;
+}
+
+.navbar-header {
+    height: 75px;
+}
+
+.navbar-default .navbar-toggle {
+    margin-top: 20px;
+}
+
+.navbar-brand {
+    height: 45px;
+    padding: 15px 15px;
+}
+
+.navbar-brand span {
+    display: inline-block;
+    padding: 25px 15px 15px 15px;
+}
+
+.navbar-brand svg {
+    height: 45px;
+    display: inline-block;
+    float: left;
+    fill: $brand-primary;
+}
+
+.navbar-brand svg path {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.navbar-brand svg path {
+    // fill: rgba(255,255,255,.7);
+    fill: $brand-primary;
+}
+.navbar-brand svg path:hover {   
+    fill: $brand-primary;
+}
+
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {    
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: $brand-primary;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: $brand-primary!important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+.visible2 {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.navbar-default:after {
+    content:"";
+}
+
+.navbar-brand {
+    font-size: 11px;
+}
+
+@media(min-width:350px) {
+    .navbar-brand {
+        font-size: 14px;
+    }
+}
+
+@media(min-width:400px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        // border-color: rgba(255,255,255,.5);
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+        // color: $brand-primary;
+    }
+
+    .navbar-brand svg path{
+        fill: rgba(255,255,255,.7);
+        // fill: $brand-primary;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        // color: #fff;
+        // color: $brand-highlight;
+
+        svg path {
+            fill: #fff;
+            // fill: rgba(255,255,255,1.0);
+            // fill: $brand-highlight;
+        }
+    }
+
+    .navbar-default .nav>li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);        
+    }
+
+    .navbar-default .nav>li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-brand svg {       
+        height: 45px;
+    }
+
+    .navbar-brand span {
+        display: inline-block;
+        padding: 25px 25px 25px 25px;
+    }
+
+    .navbar-right li a {
+        // padding-top: 30px;
+        padding: 25px 25px 25px 25px;
+    }
+
+    .navbar-header {        
+        height: 75px;
+    }
+    
+    .navbar-brand {
+        height: 45px;
+        padding: 15px 15px;
+    }
+
+    .navbar-default.affix {
+        // border-color: rgba(34,34,34,.05);
+        background-color: #fff;        
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 15px;
+        color: $brand-primary;
+
+        svg path {
+            fill: $brand-primary;
+        }
+    
+        // #spal1, #spal2, #spal3, #spal4, #spal5  { fill: $brand-secondary; }
+        // #spal6 { fill: $brand-info; }
+        // #spal8 { fill: $brand-warning; }
+        // #spal12 { fill: $brand-danger; }
+        // #spal4 { fill: $brand-danger; }
+        // #spal5 { fill: $brand-success; }
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        // color: $brand-highlight;
+        color: rgba(255,255,255,1.0);
+
+        svg path {
+            fill: $brand-highlight;
+            // fill: rgba(255,255,255,.7);
+        }
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: $brand-primary;
+    }
+}
+
+@media(min-width:768px) {
+    @media(max-width:1000px) {
+        .navbar-right>li>a {            
+            padding: 25px 10px 25px 10px;
+        }
+    }
+}

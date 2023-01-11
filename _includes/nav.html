@@ -1,0 +1,54 @@
+{% capture pagescroll %}{% endcapture %}
+
+{% if page.lang == site.lang %}
+    {% if page.url == "/" %}
+        {% capture prefix %}{% endcapture %}
+        {% capture pagescroll %}page-scroll{% endcapture %}
+    {% else %}
+        {% capture prefix %}/{% endcapture %}
+    {% endif %}
+{% else %}
+    {% capture lang_baseurl %}/{{page.lang}}/{% endcapture %}
+    {% if page.url == lang_baseurl %}
+        {% capture pagescroll %}page-scroll{% endcapture %}
+    {% endif %}
+    {% capture prefix %}/{{ page.lang }}/{% endcapture %}
+{% endif %}
+
+{% include cookie_consent.html %}
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top{{ include.navcss }}">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand {{ pagescroll }}" href="{{ prefix }}#page-top">{% include svg/biba-logo.svg %}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    {% if include.home %}
+                    <a class="{{ pagescroll }}" href="{{ prefix }}#blog">{{ site.data.i18n.t.nav.blog[page.lang] }}</a>
+                    {% else %}
+                    <a class="" href="/blog">{{ site.data.i18n.t.nav.blog[page.lang] }}</a>
+                    {% endif %}
+                </li>
+                <li>
+                    <a class="{{ pagescroll }}" href="{{ prefix }}#rental">{{ site.data.i18n.t.nav.rental[page.lang] }}</a>
+                </li>
+                <li>
+                    <a class="{{ pagescroll }}" href="{{ prefix }}#contact">{{ site.data.i18n.t.nav.contact[page.lang] }}</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

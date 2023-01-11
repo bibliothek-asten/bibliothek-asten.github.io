@@ -1,0 +1,26 @@
+groups:
+  - name: Bibliothek Asten
+    address: Marktplatz 1
+    members:
+      - nick: izenisek
+        firstname: Ilse
+        lastname: Zenisek
+        prefix:
+        postfix:
+        function:
+          en: Head
+          de: Leitung
+        phone: +43 7224 65516-41
+        mail: asten@bvoe.at
+        photo: izenisek.jpg
+      - nick: jzenisek
+        firstname: Jan
+        lastname: Zenisek
+        prefix:
+        postfix:
+        function:
+          en: IT Service
+          de: IT Service
+        phone: +43 7224 65516-41
+        mail: asten@bvoe.at
+        photo: jzenisek.jpg

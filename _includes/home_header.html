@@ -1,0 +1,21 @@
+<header class="home-header">
+    
+    {% for slot in site.data.carousel.slots %}
+            <header id="slot-{{ forloop.index0 }}" class="slot{% if forloop.index0 == 0 %} visible{% endif %}">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h2><span class="h2-content"></span></h2><h1><span class="h1-content"></span></h1><h3><span class="p-content"></span></h3>
+                    </div>
+                </div>
+                <small class="picture-info"></small>
+            </header> 
+    {% endfor %}
+
+    <a id="prev" >&#10094;</a>
+    <a id="next" >&#10095;</a>
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+
+</header>

@@ -1,0 +1,29 @@
+useCarousel: true
+slotTime: 15000
+picturePath: "../../pictures/banners/"
+defaultPicture: banner1.jpg
+slots:
+  - headline:
+      en: "Public Library Asten"
+      de: "Öffentlichen Bibliothek Asten"
+    category:
+      en: "Welcome to the"
+      de: "Willkommen in der"
+    description:
+      en: "We look forward to your visit "
+      de: "Wir freuen uns auf euren Besuch "
+    contentPosition: 1
+    picture: banner1.jpg
+    slotTime: default
+  - headline:
+      en: "Public Library Asten"
+      de: "Öffentlichen Bibliothek Asten"
+    category:
+      en: "Welcome to the"
+      de: "Willkommen in der"
+    description:
+      en: "We look forward to your visit "
+      de: "Wir freuen uns auf euren Besuch "
+    contentPosition: 2
+    picture: banner3.jpg
+    slotTime: default

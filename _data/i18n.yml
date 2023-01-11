@@ -1,0 +1,97 @@
+languages: 
+  de:
+    id: de
+    name: Deutsch
+    urlbase: de
+  en:
+    id: en
+    name: English
+    urlbase: en
+
+default: de
+
+
+t:
+  nav:
+    blog:
+      en: "News"
+      de: "Aktuelles"
+    blog-preview:
+      en: "News"
+      de: "Aktuelles"
+    contact:
+      en: "Contact"
+      de: "Kontakt"
+    info:
+      en: "Info"
+      de: "Information"
+    history:
+      en: "History"
+      de: "Geschichte"
+    rental:
+      en: "Rental"
+      de: "Verleih"
+    
+
+  pages:
+    imprint:
+      en: "Imprint"
+      de: "Impressum"
+    imprint-link:
+      en: "imprint"
+      de: "impressum"
+    dataprotection:
+      en: "Data Protection"
+      de: "Datenschutz"
+    dataprotection-link:
+      en: "dataprotection"
+      de: "datenschutz"
+    press:
+      en: "Press Material"
+      de: "Pressematerial"
+    press-link:
+      en: "press"
+      de: "pressematerial"
+    sitemap:
+      en: "Sitemap"
+      de: "Sitemap"
+
+  footer:
+    biba:
+      en: "Public Library Asten"
+      de: "Öffentliche Bibliothek Asten"
+    biba-link:
+      en: "https://www.bibliothek-asten.at/en/"
+      de: "https://www.bibliothek-asten.at/"
+    bvoe:
+      en: "Public Library Association Austria"
+      de: "Büchereiverband Österreichs"
+    bvoe-link:
+      en: "https://www.bvoe.at/"
+      de: "https://www.bvoe.at/"
+    imprint:
+      en: "Imprint"
+      de: "Impressum"
+    dataprotection:
+      en: "Data Protection"
+      de: "Datenschutz"
+    contact:
+      en: "Contact"
+      de: "Kontakt"
+    press:
+      en: "Press Material"
+      de: "Pressematerial"
+    bibafull:
+      en: "Public Library Asten"
+      de: "Öffentliche Bibliothek Asten"
+    fundingtext:
+      en: 'The public library Asten is an institution of the parish Asten-St-Jakob. We are a member of the Library Association of Austria (BVÖ) and the Austrian Library Association (ÖBW) and cooperate with the library department of the Diocese of Linz.'
+      de: 'Die öffentliche Bibliothek Asten ist eine Einrichtung der Pfarre Asten-St-Jakob. Wir sind Mitglied des Büchereiverbandes Österreichs (BVÖ) und des Österreichischen Bibliothekswerkes (ÖBW) und arbeiten mit der Bibliotheksfachstelle der Diözese Linz zusammen.'
+
+  lbiba-dataprotection-link:
+    en: https://www.bibliothek-asten.at/en/dataprotection/
+    de: https://www.bibliothek-asten.at/datenschutz/
+
+  months:
+    en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    de: ["Jänner", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" ]

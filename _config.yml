@@ -18,21 +18,64 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Öffentliche Bibliothek Asten
+email: asten@bvoe.at
+description: #>- # this means to ignore newlines until "baseurl:"
+  en: This is the website of the Publick Library of Asten.
+  de: Das ist die Webseite der öffentlichen Bibliothek Asten.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://www.bibliothek-asten.at" # the base hostname & protocol for your site, e.g. http://example.com
+lang: de
+author: Öffentliche Bibliothek Asten
+keywords: Öffentliche Bibliothek, Asten, Linz-Land, Oberösterreich, Österreich, BVÖ
+github_username:  janzenisek
+
+# SEO
+google_analytics: true
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+environment: development
+regenerate: false
+
+show_drafts: false
+future: false
+
+blogname: "news"
+permalink: news/:year/:title/
+paginate: 7
+paginate_path: /news/:page:num/
+
+collections:
+  category:
+    output: true
+    permalink: /news/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+excerpt_separator: <!--more-->
+
+# server config options
+livereload: false
+reload_port: 5678
+
+sass:
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
