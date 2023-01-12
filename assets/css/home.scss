@@ -67,6 +67,7 @@ table.info-table tr td:last-child {
 
 table.spread-table {
   width: 100%;
+  table-layout: fixed;
 }
 
 table.spread-table {
@@ -79,6 +80,11 @@ table.spread-table td {
   vertical-align: top;
   text-align: left;
   width: 25%;
+  word-break: break-word;
+}
+
+table.spread-table th {
+  word-break: break-all;
 }
 
 table.spread-table tr td:first-child {
