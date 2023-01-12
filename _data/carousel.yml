@@ -1,7 +1,7 @@
 useCarousel: true
-slotTime: 15000
-picturePath: "../../pictures/banners/"
-defaultPicture: banner1.jpg
+slotTime: 9000
+picturePath: "../../assets/pictures/symbolic/"
+defaultPicture: bookstack.jpg
 slots:
   - headline:
       en: "Public Library Asten"
@@ -11,9 +11,12 @@ slots:
       de: "Willkommen in der"
     description:
       en: "We look forward to your visit "
-      de: "Wir freuen uns auf euren Besuch "
+      de: "Wir freuen uns auf euren Besuch "          
     contentPosition: 1
-    picture: banner1.jpg
+    picture: openbook2.jpg
+    copyright:
+      en: ""
+      de: ""
     slotTime: default
   - headline:
       en: "Public Library Asten"
@@ -25,5 +28,24 @@ slots:
       en: "We look forward to your visit "
       de: "Wir freuen uns auf euren Besuch "
     contentPosition: 2
-    picture: banner3.jpg
+    picture: bookstack.jpg
+    copyright:
+      en: ""
+      de: ""
     slotTime: default
+  - headline:
+      en: "Public Library Asten"
+      de: "Öffentlichen Bibliothek Asten"
+    category:
+      en: "Welcome to the"
+      de: "Willkommen in der"
+    description:
+      en: "We look forward to your visit "
+      de: "Wir freuen uns auf euren Besuch "
+    contentPosition: 3
+    picture: bookrow.jpg
+    copyright:
+      en: ""
+      de: ""
+    slotTime: default
+

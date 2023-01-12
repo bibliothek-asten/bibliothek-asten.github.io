@@ -16,10 +16,10 @@ layout: blog
 <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h4><a href="/blog">Blog</a>
+    <h4><a href="/news">Aktuelles</a>
     <span class="slash-separator"></span>
     {% for cat in page.categories %}
-      <a href="/blog/{{ cat | downcase }}">{{ cat }}</a> 
+      <a href="/news/{{ cat | downcase }}">{{ cat }}</a> 
     {% endfor %}
     </h4>
     <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>

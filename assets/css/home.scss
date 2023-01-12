@@ -65,6 +65,28 @@ table.info-table tr td:last-child {
   //font-family: $serif-font-stack;
 }
 
+table.spread-table {
+  width: 100%;
+}
+
+table.spread-table {
+  font-family: $sans-serif-font-stack;
+  font-size: 16px;
+}
+
+table.spread-table td {
+  padding: 10px 0px 0px 0px;
+  vertical-align: top;
+  text-align: left;
+  width: 25%;
+}
+
+table.spread-table tr td:first-child {
+  // padding-right: 25px;
+  // color: lighten($brand-primary, 40%);
+}
+
+
 // BLOG TEASER
 
 .blog-button {

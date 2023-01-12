@@ -3,7 +3,7 @@ layout: home
 lang: de
 ---
 
-<section class="bg-dark" id="blog">
+<section class="bg-dark" id="news">
     <div class="container">
         <h2>Aktuelles</h2>
         {% if site.posts.size > 0 %}
@@ -25,14 +25,32 @@ lang: de
     </div>
 </section>
 
-<section class="bg-primary" id="rental">
-    <div class="container">
+<section class="bg-primary-dark" id="rental">
+    <div class="container text-justify">
         <h2 class="section-heading">Verleih</h2>
         <div class="row">
             <div class="col-lg-12 col-md-12">
                  <p class="text-justify">
+                 <br/>
+                 Wir, von der öffentlichen Bibliothek der Pfarre Asten sind stolz, Ihnen einen großen Medienbestand anbieten zu können: 5.918 Bücher, 462 Comics, Mangas und Graphic Novels, 354 Hörbücher für Kinder, 21 Zeitschriftenabos, 151 Spiele und 517 DVDs (Stand Jänner 2023).
+                 <br/><br/>
                  </p>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">                
+                <table class="spread-table">
+                    <tr><th>Medienart</th><th>Kosten</th><th>Verleihdauer</th><th>Überziehungsgebühr</th></tr>
+                    <tr><td>Bücher Kinder</td><td>€ 0,35</td><td>4 Wochen</td><td>€ 0,20 / Woche</td></tr>
+                    <tr><td>Bücher Erwachsene</td><td>€ 0,50</td><td>4 Wochen</td><td>€ 0,20 / Woche</td></tr>
+                    <tr><td>Comics &amp; Mangas</td><td>€ 0,35 / 0,50</td><td>2 Wochen</td><td>€ 0,20 / Woche</td></tr>
+                    <tr><td>Hörbücher</td><td>€ 1,00</td><td>2 Wochen</td><td>€ 0,50 / Woche</td></tr>
+                    <tr><td>Spiele</td><td>€ 1,00</td><td>2 Wochen</td><td>€ 0,50 / Woche</td></tr>
+                    <tr><td>Zeitschriften</td><td>€ 0,25</td><td>1 Woche</td><td>€ 0,25 / Woche</td></tr>
+                    <tr><td>DVDs / BluRays</td><td>€ 2,00</td><td>1 Woche</td><td>€ 2,00 / Woche</td></tr>                    
+                </table>
+                <br/>
+            </div>            
         </div>
     </div>
 </section>

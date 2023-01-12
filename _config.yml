@@ -71,7 +71,7 @@ defaults:
 excerpt_separator: <!--more-->
 
 # server config options
-livereload: false
+livereload: true
 reload_port: 5678
 
 sass:

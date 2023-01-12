@@ -70,6 +70,8 @@ a {
 	color: $brand-secondary;
 }
 
+
+// bg primary light
 .bg-primary-light {
     color: $brand-grey;
     background-color: $brand-primary-light;
@@ -101,6 +103,37 @@ a {
     border-color: $brand-secondary;
 }
 
+
+// bg primary dark
+.bg-primary-dark {
+    color: $text-light;
+    background-color: $brand-primary-dark;
+}
+
+.bg-primary-dark a
+{
+	color: $text-light;
+}
+
+.bg-primary-dark a:hover,
+.bg-primary-dark a:focus
+{
+	color: $brand-secondary;
+}
+
+.bg-primary-dark .btn {
+    color: lighten($brand-grey, 15%);
+    border-color: lighten($brand-grey, 15%);
+}
+
+.bg-primary-dark .btn:hover,
+.bg-primary-dark .btn:focus
+{
+    color: $brand-secondary;
+    border-color: $brand-secondary;
+}
+
+// bg secondary
 .bg-secondary {
     // color: $text-light;
     color: $brand-grey;
@@ -108,15 +141,14 @@ a {
 }
 
 .bg-secondary a
-{
-	// color: $text-light;
+{	
     color: $brand-grey;
 }
 
 .bg-secondary a:hover,
 .bg-secondary a:focus
 {
-	color: $brand-primary;
+	color: $brand-grey-light;
 }
 
 .bg-dark {

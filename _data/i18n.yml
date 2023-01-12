@@ -13,10 +13,10 @@ default: de
 
 t:
   nav:
-    blog:
+    news:
       en: "News"
       de: "Aktuelles"
-    blog-preview:
+    news-preview:
       en: "News"
       de: "Aktuelles"
     contact:
@@ -55,6 +55,9 @@ t:
     sitemap:
       en: "Sitemap"
       de: "Sitemap"
+    sitemap-link:
+      en: "sitemap"
+      de: "sitemap"
 
   footer:
     biba:
@@ -78,6 +81,9 @@ t:
     contact:
       en: "Contact"
       de: "Kontakt"
+    sitemap:
+      en: "Sitemap"
+      de: "Sitemap"
     press:
       en: "Press Material"
       de: "Pressematerial"
